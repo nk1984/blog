@@ -64,7 +64,7 @@ class AppPanel extends HTMLElement {
 	static get observedAttributes() { // (3)
 		return ['data-updatedAt'];
 	}
-	
+
 	attributeChangedCallback(name, oldValue, newValue) { // (4)
 		this.render();
 	}
@@ -73,7 +73,7 @@ class AppPanel extends HTMLElement {
 		window.data = this.getAttribute('data');
 		this.attachShadow({mode: 'open'});
 		this.render();
-		
+
 	}
 
 	render() {
