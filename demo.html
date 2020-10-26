@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            background: #ddd;
+        }
+       .card{
+           background: #047aed;
+           color: #fff;
+           margin: 1rem;
+           padding: 1rem;
+           border: solid 3px rgb(252, 248, 248);
+           box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+           text-shadow:1px 1px 5px rgba(0,0,0,0.5);
+           font: normal bold 1rem/1.4rem helvetica;
+           
+
+       }
+    </style>
+  </head>
+
+  <body>
+    <script>
+      var arryEmployees = [
+        {
+          id: 1,
+          Name: "nirbhai",
+          Address: "Markham street",
+          contractNumber: 3064573457,
+          Dob: 1984 - 05 - 10,
+          PostalCode: "L6S 2X7",
+          DateOfJoining: "3 april 2015",
+        },
+        {
+          id: 2,
+          Name: "raman",
+          Address: "Markham street",
+          contractNumber: 3064573457,
+          Dob: 1984 - 05 - 10,
+          PostalCode: "L6S 2X7",
+          DateOfJoining: "3 april 2015",
+        },
+        {
+          id: 3,
+          Name: "param",
+          Address: "Markham street",
+          contractNumber: 3064573457,
+          Dob: 1984 - 05 - 10,
+          PostalCode: "L6S 2X7",
+          DateOfJoining: "3 april 2015",
+        },
+        {
+          id: 4,
+          Name: "preet",
+          Address: "Markham street",
+          contractNumber: 3064573457,
+          Dob: 1984 - 05 - 10,
+          PostalCode: "L6S 2X7",
+          DateOfJoining: "3 april 2015",
+        },
+      ];
+
+      var fnReduce = (html,data) => {
+          return `
+            ${html}
+           <div class="card" >
+
+                <div>${data.id}</div>
+                <div>${data.Name}</div>
+                <div>${data.Address}</div>
+                <div>${data.DateOfJoining}</div>
+           </div>    
+            
+          `
+      }
+      var domHTML = arryEmployees.reduce(fnReduce, ``);
+      console.log(domHTML)
+      //document.body.innerHTML = domHTML;
+
+      var homeArray = [
+        {id: 1001, address:'26 Markham St', type: 'detached', lotSize: '50X120', parking: 6, basement: 'furnished'},
+        {id: 1001, address:'49 brunchberry', type: 'semi-detached', lotSize: '15X104', parking: 4, basement: 'furnished'},
+        {id: 1001, address:'16 Markham St', type: 'detached', lotSize: '35X110', parking: 3, basement: 'unfurnished'},
+        {id: 1001, address:'20Markham St', type: 'condo', lotSize: '42X90', parking: 2, basement: 'unfurnished'},
+        {id: 1001, address:'30 Markham St', type: 'backSplit', lotSize: '35X100', parking: 5, basement: 'furnished'},
+        {id: 1001, address:'50 Markham St', type: 'single', lotSize: '50X112', parking:46, basement: 'unfurnished'},
+        
+      ];
+        console.table( homeArray)
+
+
+
+     let number1 = 1000;
+     let str1 = 'Deep Singh';
+     let isDay = true;
+     let dayArray = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+     let monthObject = {
+         "Jan": "January",
+         "Feb": "February",
+         "Mar": "March",
+         "Apr": "April",
+         "May": "May",
+         "Jun": "June",
+         "Jul": "July",
+         "Aug": "August",
+         "Sep": "September",
+         "Oct": "October",
+         "Nov": "November",
+         "Dec": "December",
+     }
+
+     /*
+        function add(a, b) {
+            return a+b;
+        }
+
+        var add = function(a, b) {
+            return a+b;
+        }
+
+        var add = (a, b) => { 1return a+b; }
+
+        var add = (a, b) =>  a+b;
+
+        fetch('https://jsonplaceholder.typicode.com/todos/1')
+            .then(response => response.json())
+            .then(json => console.log(json))
+
+     */
+
+     // dayArray.sort() // apply sort on strings datatype by default {(a,b)=> a-b}, if object {(a,b)=> a.id - b.id}
+     // dayArray.reverse() // reverse the array elements
+     // dayArray.forEach() // iterate array by each element
+     // dayArray.map() // return new array after performing the same operation on all array elements ;
+     // dayArray.filter() // return new array with filtering criteria
+     // dayArray.reduce()
+     // dayArray.push()  // insert new item at the end of the array
+     // dayArray.pop()  // remove last item from the array
+     // dayArray.shift() // insert new item at the beginning of the array
+     // dayArray.unshift() // remove first element from the beginning of the array
+     // dayArray.splice() // add and remove elements from the array
+     // dayArray.slice() // make new array with specified elements
+     // dayArray.concat() // make new array after merging
+     // dayArray.toString() // convert array into list
+
+
+     // iterate object using for..in loop
+     //var obj = {id: 1001, name: 'deep'};for(var key in obj) { console.log(key, obj[key])}
+
+
+    </script>
+    <!-- <script>
+      var n1 = 1;
+      var str1 = "deep";
+      var isSunnyDay = false;
+      var obj1 = {};
+      var arr1 = [];
+      var fun1 = function add(a, b) {
+        return a + b;
+      }; // (a, b) => { return a+b; } //  (a,b) => a+b
+      var fun2 = function square(a) {
+        return a * a;
+      }; // (a) => { return a*a; } //  a => a*a;
+
+      console.log(n1, str1, isSunnyDay, obj1, arr1, fun1, fun2);
+
+      var number1 = 12;
+      var str = "amritsar";
+      var isRainyDay = true;
+      var obj = {
+        id: 100,
+        name: "Deep Singh",
+        city: "Amritsar",
+        age: 36,
+        isMale: false,
+        dateOfBirth: new Date(1984, 5, 10),
+      };
+      var array1 = [1, 2, 3, 4, 5, 6];
+      var diffrence = (a, b) => {
+        return a - b;
+      };
+      console.log(number1, str, isRainyDay, obj, array1, diffrence(15, 10));
+    </script> -->
+  </body>
+</html>
