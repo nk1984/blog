@@ -1,0 +1,12 @@
+[
+			{id:1001, name: 'Nirbhai Kaur', age: 21 },
+			{id:1002, name: 'Sharan Kaur', age: 31  },
+			{id:1003, name: 'Manjeet Kaur', age: 27  },
+			{id:1004, name: 'Harpreet Kaur', age: 19  },
+			{id:1005, name: 'Tejvir Kaur', age: 25  },
+      {id:1006, name: 'Bhagwant Singh', age: 33  },
+			{id:1007, name: 'Parwan Singh', age: 29  },
+			{id:1008, name: 'Gurmeet Singh', age: 27  },
+			{id:1009, name: 'Simarjit Singh', age: 40  },
+			{id:10010, name: 'Kulwant Singh', age: 30  }
+]
