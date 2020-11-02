@@ -73,6 +73,7 @@ class AppPanel extends HTMLElement {
 		window.data = this.getAttribute('data');
 		this.attachShadow({mode: 'open'});
 		this.render();
+		fetch('data.json').then(res=>res.json()).then(data=>console.log(data)).catch(err=>console.error(err));
 
 	}
 
