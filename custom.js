@@ -72,7 +72,7 @@ class AppPanel extends HTMLElement {
 	connectedCallback() {
 		var me = this;
 		this.attachShadow({mode: 'open'});		
-		fetch('data.json').then(res=>res.json()).then(data=>{me.data=data;this.render();}).catch(err=>console.error(err));
+		fetch('data.json').then(res=>res.json()).then(data=>{me.data=data.students;this.render();}).catch(err=>console.error(err));
 	}
 
 	render() {
